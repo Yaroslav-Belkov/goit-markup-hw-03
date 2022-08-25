@@ -411,6 +411,7 @@ color: var(--light-collor);
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  border: 1px solid var(--border-color-top)
 }
 
 .portfolio-item:nth-child(3n){
@@ -425,11 +426,14 @@ color: var(--light-collor);
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    margin-left: 24px;
 }
 
 .portfolio-content {
     font-size: 16px;
     line-height: 1.87;
+    margin-left: 24px;
+    margin-bottom: 20px;
     color: var(--portfolio-content-color)
 
 }
