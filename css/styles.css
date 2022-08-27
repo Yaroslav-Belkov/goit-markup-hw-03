@@ -37,7 +37,16 @@ li {
   list-style-type: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Оформлення логотипу */
 .logo {
 text-decoration: none;
@@ -81,6 +90,12 @@ font-family: 'Raleway';
 
 }
 
+.head-flex {
+  display: flex;
+  align-items: center;
+  height: 80px;
+
+}
 .nav .item {
   margin-right: 50px;
 }
@@ -90,6 +105,9 @@ font-family: 'Raleway';
 
 }
 
+.nav-flex {
+  display: flex;
+}
 .nav {
   display: flex;
   margin-left: 93px;
@@ -104,15 +122,6 @@ font-family: 'Raleway';
   color: var(--hover-color);
 }
 
-.nav-flex {
-  display: flex;
-  align-items: center;
-  height: 80px;
-
-}
-.conteiner-bottom {
-border-bottom: 1px solid var(--border-color-top);
-}
 
 .conteiner-bottom.portf {
   margin-bottom: 94px;
@@ -129,23 +138,11 @@ border-bottom: 1px solid var(--border-color-top);
 
 
 .conteiner {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.conteiner-portfolio-bottom {
-  margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 94px;
-}
-
-
 
 /* Контакти сайту */
 .contacts a {
@@ -178,17 +175,19 @@ color: var(--hover-color);
 .hero {
   background: var(--hero-bg-color);
   text-align: center;
-  margin-bottom: 94px;
+  padding: 200px;
 }
 
 .heero-title {
   font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
+    width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 40px;
+  
     color: var(--light-collor);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
@@ -204,9 +203,8 @@ color: var(--hover-color);
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding: 10px 32px;
-    margin-bottom: 20px;
-    height: 50px;
     min-width: 216px;
+    border: none;
     background: var(--button-color);
       color: var(--light-collor);
 }
@@ -288,8 +286,8 @@ color: var(--hover-color);
 
 
 
-.proffesional .conteiner {
-  margin-bottom: 82px;
+.proffesional {
+  padding-top: 0;
 }
 
 .team-list {
@@ -301,17 +299,16 @@ color: var(--hover-color);
   margin-left: 30px;
 }
 
+.team .title {
+  margin-bottom: 50px;
+}
 .team-item {
   width: 270px;
-  height: 368px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-images {
-  margin-bottom: 30px;
-}
 
 .team-name {
   margin-bottom: 10px;
@@ -336,6 +333,11 @@ font-weight: 500;
   color: var(--spec-content-color);
 }
 
+.div-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 
 .conteiner-portfolio-bottom .title {
   padding-top: 94px;
@@ -353,6 +355,7 @@ padding-bottom: 50px;
 
 .footer {
   background: var(--footer-color);
+  padding: 60px 0;
 }
 
 .contacts-foot {
@@ -383,7 +386,6 @@ color: var(--light-collor);
 
 .button-filters {
   display: block;
-    font-family: inherit;
   font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -391,7 +393,8 @@ color: var(--light-collor);
     background-color: var(--button-filters-color);
     color: var(--nav-color);
     border-radius: 4px; 
-    border: transparent;
+    border: none;
+    padding: 6px 22px;
 }
 
 .button-filters:hover,
@@ -400,6 +403,10 @@ color: var(--light-collor);
   color: var(--light-collor);
 }
 
+.portfolio-border{
+  border-top: 1px solid var(--border-color-top);
+
+}
 
 .portfolio-list {
   display: flex;
@@ -411,7 +418,6 @@ color: var(--light-collor);
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid var(--border-color-top)
 }
 
 .portfolio-item:nth-child(3n){
@@ -426,19 +432,25 @@ color: var(--light-collor);
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
-    margin-left: 24px;
+    margin-bottom: 4px;
 }
 
 .portfolio-content {
     font-size: 16px;
     line-height: 1.87;
-    margin-left: 24px;
-    margin-bottom: 20px;
     color: var(--portfolio-content-color)
 
 }
+
+.products {
+  padding: 20px 24px 54px 24px;
+  border: 1px solid var(--border-color-top)
+}
+
+
 .adres {
   font-style: normal;
+  margin-top: 20px;
 }
 .address-position {
   text-decoration: none;
@@ -460,8 +472,7 @@ margin-bottom: 50px;
 margin-left: 8px;
 }
 
-.portfolio-img {
-margin-bottom: 20px;
+.address-list .item {
+margin-top: 8px;
 }
-
 
