@@ -442,8 +442,10 @@ color: var(--light-collor);
 }
 
 .products {
-  padding: 20px 24px 54px 24px;
-  border: 1px solid var(--border-color-top)
+  padding: 20px 24px 20px 24px;
+  border: 1px solid var(--border-color-top);
+  border-top: none;
+  
 }
 
 
